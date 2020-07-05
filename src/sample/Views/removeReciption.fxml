@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RemoveReciptionController">
+   <children>
+      <Label layoutX="326.0" layoutY="14.0" text="Remove Reception" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="296.5999755859375" endY="1.399993896484375" layoutX="427.0" layoutY="83.0" startX="-100.0" stroke="#6747cd" />
+      <ListView fx:id="receptionList" layoutX="14.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="490.0" />
+      <Line endX="77.79998779296875" endY="66.0" layoutX="437.0" layoutY="93.0" startX="84.0" startY="599.5999755859375" stroke="#6747cd" />
+      <Button fx:id="removeBtn" layoutX="669.0" layoutY="541.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="REMOVE">
+         <font>
+            <Font name="Ebrima" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idTXT" layoutX="694.0" layoutY="355.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" promptText="receptionID" />
+      <Label layoutX="706.0" layoutY="324.0" text="Enter ReceptionID:" textAlignment="CENTER" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="137.0" text="Receptions Available:" textFill="#eb8f5e">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

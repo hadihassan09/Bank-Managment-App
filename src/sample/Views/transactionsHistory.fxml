@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.transactionsHistory">
+   <children>
+      <Text fill="#eb8f5e" layoutX="261.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions History" textAlignment="CENTER" wrappingWidth="524.5791015625">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Text>
+      <Line endX="339.0" layoutX="403.0" layoutY="78.0" startX="-100.0" stroke="#6747cd" />
+      <TableView fx:id="transactionTable" layoutY="299.0" prefHeight="450.0" prefWidth="1050.0">
+        <columns>
+          <TableColumn fx:id="transactionID" prefWidth="107.0" text="TransactionID" />
+            <TableColumn fx:id="accountID" prefWidth="157.0" text="Account ID" />
+          <TableColumn fx:id="transactionDate" prefWidth="157.0" text="Transaction Date" />
+            <TableColumn fx:id="transactionAmount" prefWidth="184.0" text="Transaction Amount" />
+            <TableColumn fx:id="newBalance" prefWidth="130.0" text="New Balance" />
+            <TableColumn fx:id="transactionDescription" prefWidth="157.0" text="Transaction Description" />
+            <TableColumn fx:id="transactionFeeAmount" prefWidth="157.0" text="TransactionFeeAmount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

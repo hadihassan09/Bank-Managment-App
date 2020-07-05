@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainPageController">
+   <left>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" styleClass="slider" stylesheets="@../../stylesheet.css" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/guiapplogo.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label fx:id="usernameLabel" alignment="CENTER" contentDisplay="CENTER" text="Welcome" textAlignment="CENTER" textFill="#e9ba64">
+               <font>
+                  <Font name="Ebrima" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Label>
+            <Line endX="100.0" startX="-100.0" stroke="#e6c676" />
+            <VBox alignment="BASELINE_LEFT" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="checkCurrentBalanceBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Check Current Ballance" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="depositMoneyBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Deposit Money" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="withdrawMoneyBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Withdraw Money" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="transferMoneyBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Transfer Money">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="transactionsHistoryBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Transactions History" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="showAllClientsBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Show All Clients" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="addReceptionBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Add Reciption" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="removeReceptionBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Remove Reciption" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="addUserBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Add User" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Droid Sans" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="dropUserBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Drop User" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="logoutBtn" styleClass="sliderBtns" stylesheets="@../../stylesheet.css" text="Logout" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="400.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/guiapplogo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="337.0" layoutY="473.0" text="Welcome To Our Bank" textFill="#e6c676">
+               <font>
+                  <Font size="38.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="13.85" radius="7.02" spread="0.66" width="16.23" />
+               </effect>
+            </Label>
+            <Button fx:id="getAccountIDBtn" layoutX="467.0" layoutY="528.0" mnemonicParsing="false" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="Get accountID" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

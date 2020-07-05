@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.transferMoneyController">
+   <children>
+      <Label layoutX="370.0" layoutY="24.0" text="Transfer Money" textAlignment="CENTER" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="205.0" layoutX="496.0" layoutY="94.0" startX="-126.0" stroke="#6747cd" />
+      <Label layoutX="14.0" layoutY="195.0" text="Sender accountID:" textFill="#eb8f5e">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="195.0" text="Reciever accountID:" textFill="#eb8f5e">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="senderID" layoutX="175.0" layoutY="190.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="receiverID" layoutX="836.0" layoutY="190.0" prefHeight="40.0" prefWidth="200.0" />
+      <Line endX="167.0" layoutX="485.0" layoutY="210.0" startX="-100.0" stroke="#6747cd" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endX="65.5" endY="15.5" layoutX="587.0" layoutY="192.0" startX="28.0" startY="-3.0" stroke="#6747cd" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Line endX="68.5" endY="-26.0" layoutX="586.0" layoutY="236.0" startX="29.0" startY="-7.0" stroke="#6747cd" strokeLineCap="ROUND" strokeWidth="5.0" />
+      <Button fx:id="transferBtn" layoutX="786.0" layoutY="654.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="TRANSFER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb8f5e" height="352.0" layoutX="321.0" layoutY="261.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="408.0" />
+      <HBox layoutX="367.0" layoutY="332.0" prefHeight="250.0" prefWidth="318.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="156.0">
+               <children>
+                  <CheckBox fx:id="a5" mnemonicParsing="false" prefWidth="156.0" text="5,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a20" mnemonicParsing="false" prefWidth="156.0" text="20,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a100" mnemonicParsing="false" prefWidth="156.0" text="100,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a500" mnemonicParsing="false" prefWidth="156.0" text="500,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="436.0" prefWidth="157.0">
+               <children>
+                  <CheckBox fx:id="a10" mnemonicParsing="false" prefWidth="156.0" text="10,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a50" mnemonicParsing="false" prefWidth="156.0" text="50,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a200" mnemonicParsing="false" prefWidth="156.0" text="200,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a1000" mnemonicParsing="false" prefWidth="156.0" text="1,000,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="410.0" layoutY="269.0" text="Ammount Of Transfer" textFill="#6747cd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="618.0" text="Total Ammount" textFill="#6747cd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCheck" alignment="CENTER" layoutX="439.0" layoutY="654.0" prefHeight="27.0" prefWidth="173.0" text="0.0" textAlignment="CENTER" textFill="#6747cd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

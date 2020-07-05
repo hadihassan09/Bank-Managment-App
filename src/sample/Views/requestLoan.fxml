@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RequestLoanController">
+   <children>
+      <Label layoutX="382.0" layoutY="14.0" text="Request Loan" textFill="#eb8f5e">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Line endX="186.0" endY="-1.52587890625E-5" layoutX="483.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+      <TextArea fx:id="descriptionTXT" layoutX="628.0" layoutY="199.0" prefHeight="352.0" prefWidth="408.0" promptText="Enter Loan Description">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </TextArea>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb8f5e" height="352.0" layoutX="14.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="408.0" />
+      <Label fx:id="leb1" layoutX="116.0" layoutY="199.0" text="Requested Amount" textFill="#6747cd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="60.0" layoutY="270.0" prefHeight="250.0" prefWidth="318.0">
+         <children>
+            <VBox prefHeight="436.0" prefWidth="158.0">
+               <children>
+                  <CheckBox fx:id="a5" mnemonicParsing="false" text="5,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a20" mnemonicParsing="false" text="20,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a100" mnemonicParsing="false" text="100,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a500" mnemonicParsing="false" text="500,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="436.0" prefWidth="158.0">
+               <children>
+                  <CheckBox fx:id="a10" mnemonicParsing="false" text="10,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a50" mnemonicParsing="false" text="50,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a200" mnemonicParsing="false" text="200,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a1000" mnemonicParsing="false" text="1,000,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="-100.0" endY="426.0" layoutX="626.0" layoutY="169.0" startX="-100.0" stroke="#6747cd" strokeWidth="3.0" />
+      <Label fx:id="leb2" layoutX="143.0" layoutY="558.0" text="Total Amount" textFill="#6747cd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lebaneseTotal" alignment="CENTER" layoutX="121.0" layoutY="594.0" prefHeight="27.0" prefWidth="193.0" text="0" textAlignment="CENTER" textFill="#6747cd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="requestBtn" layoutX="789.0" layoutY="666.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="247.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="REQUEST">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

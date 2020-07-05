@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ShowAllClientsController">
+   <children>
+      <Label layoutX="356.0" layoutY="14.0" text="Show All Clients" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="237.39996337890625" endY="0.399993896484375" layoutX="457.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+      <TableView fx:id="clientsTable" layoutY="250.0" prefHeight="500.0" prefWidth="1050.0">
+        <columns>
+          <TableColumn fx:id="customerID" prefWidth="86.19998627901077" text="customerID" />
+          <TableColumn fx:id="accountID" prefWidth="81.80003356933594" text="accountID" />
+            <TableColumn fx:id="firstName" prefWidth="105.39997863769531" text="fisrtName" />
+            <TableColumn fx:id="middleName" prefWidth="94.80001831054688" text="middleName" />
+            <TableColumn fx:id="lastName" minWidth="9.199981689453125" prefWidth="116.79998779296875" text="lastName" />
+            <TableColumn fx:id="workPhone" minWidth="0.0" prefWidth="127.20001220703125" text="workPhone" />
+            <TableColumn fx:id="emailAddress" minWidth="2.60003662109375" prefWidth="256.60003662109375" text="emailAddress" />
+            <TableColumn fx:id="currentBalance" prefWidth="178.20001220703125" text="currentBalance" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

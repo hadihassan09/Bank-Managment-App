@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.CheckFeedBacksController">
+   <children>
+      <Label layoutX="344.0" layoutY="14.0" text="Check FeedBacks" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="261.0" endY="0.9999847412109375" layoutX="445.0" layoutY="83.0" startX="-100.0" stroke="#6747cd" />
+      <TableView fx:id="feedBackTable" layoutY="280.0" prefHeight="470.0" prefWidth="1050.0">
+        <columns>
+          <TableColumn fx:id="feedBackID" prefWidth="149.0" text="feedBackID" />
+          <TableColumn fx:id="accountID" prefWidth="146.0" text="accountID" />
+            <TableColumn fx:id="feedBackDescription" prefWidth="754.0" text="feedBackDescription" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

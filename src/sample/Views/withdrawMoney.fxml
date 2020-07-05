@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.WithdrawMoneyController">
+   <children>
+      <Label layoutX="343.0" layoutY="14.0" text="Withdraw Money" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="263.0" endY="0.399993896484375" layoutX="444.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+      <Line endX="59.20001220703125" endY="466.79998779296875" layoutX="454.0" layoutY="94.0" startX="59.20001220703125" startY="92.80000305175781" stroke="#6747cd" strokeWidth="2.0" visible="false" />
+      <Button fx:id="withdrawBtn" layoutX="415.0" layoutY="638.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="198.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="Withdraw" textFill="#eb8f5e">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="dollRec" arcHeight="5.0" arcWidth="5.0" fill="#eb8f5e" height="352.0" layoutX="310.0" layoutY="199.0" stroke="#6747cd" strokeLineCap="ROUND" strokeWidth="0.0" visible="false" width="408.0" />
+      <Label fx:id="doll1" layoutX="367.0" layoutY="203.0" text="Withdraw currency in Dollar" textFill="#6747cd" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="doll2" layoutX="436.0" layoutY="562.0" text="Total in Dollar" textFill="#6747cd" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="dollarTotal" alignment="CENTER" layoutX="437.0" layoutY="598.0" prefHeight="27.0" prefWidth="155.0" text="0" textAlignment="CENTER" textFill="#6747cd" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox fx:id="dollarBox" alignment="CENTER" layoutX="353.0" layoutY="249.0" prefHeight="250.0" prefWidth="318.0" visible="false">
+         <children>
+            <VBox alignment="CENTER" prefHeight="436.0" prefWidth="158.0">
+               <children>
+                  <CheckBox fx:id="d5" mnemonicParsing="false" prefWidth="156.0" text="5$" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d20" mnemonicParsing="false" prefWidth="156.0" text="20$" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d100" mnemonicParsing="false" prefWidth="156.0" text="100$" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d500" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="156.0" text="500$" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="436.0" prefWidth="157.0">
+               <children>
+                  <CheckBox fx:id="d10" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="10$" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d50" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="50$" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d200" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="200$" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="d1000" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="1000$" textAlignment="CENTER" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Rectangle fx:id="lebRec" arcHeight="5.0" arcWidth="5.0" fill="#eb8f5e" height="352.0" layoutX="310.0" layoutY="199.0" stroke="#6747cd" strokeType="INSIDE" strokeWidth="0.0" width="408.0" />
+      <HBox fx:id="lebaneseBox" layoutX="354.0" layoutY="262.0" prefHeight="250.0" prefWidth="318.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="436.0" prefWidth="158.0">
+               <children>
+                  <CheckBox fx:id="a5" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="5,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a20" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="20,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a100" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="100,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a500" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="500,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children></VBox>
+            <VBox alignment="CENTER" prefHeight="436.0" prefWidth="157.0">
+               <children>
+                  <CheckBox fx:id="a10" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="10,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a50" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="50,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a200" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="200,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="a1000" mnemonicParsing="false" prefWidth="156.0" stylesheets="@../../stylesheet.css" text="1,000,000L.L" textFill="WHITE">
+                     <padding>
+                        <Insets top="26.0" />
+                     </padding>
+                     <font>
+                        <Font name="Ebrima Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children></VBox>
+         </children>
+      </HBox>
+      <Label fx:id="leb2" layoutX="423.0" layoutY="562.0" text="Total in Lebanese" textFill="#6747cd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lebaneseTotal" alignment="CENTER" layoutX="422.0" layoutY="598.0" prefHeight="27.0" prefWidth="193.0" text="0" textAlignment="CENTER" textFill="#6747cd">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="leb1" layoutX="354.0" layoutY="203.0" text="Withdraw currency in Lebanese" textFill="#6747cd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="change" alignment="CENTER" layoutX="413.0" layoutY="119.0" styleClass="changeBtns" stylesheets="@../../stylesheet.css" text="withdraw in dollar" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

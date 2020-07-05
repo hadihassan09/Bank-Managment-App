@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.checkCurrentBalanceController">
+   <children>
+      <Label layoutX="307.0" layoutY="14.0" text="Check Current Ballance" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <Line endX="386.199951171875" endY="0.399993896484375" layoutX="408.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+      <Label fx:id="balanceLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="308.0" prefHeight="66.0" prefWidth="375.0" textAlignment="CENTER" textFill="#ca0000">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="check" layoutX="468.0" layoutY="429.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="162.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="Check" />
+      <Label layoutX="287.0" layoutY="208.0" text="Your Account Balance is">
+         <font>
+            <Font name="Ebrima" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="363.0" text="L.L">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

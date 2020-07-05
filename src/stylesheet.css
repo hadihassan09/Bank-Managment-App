@@ -1,0 +1,103 @@
+.parent{
+    -fx-background-color: #d2c5fc;
+}
+
+.slider{
+    -fx-background-color: #6747CD;
+}
+
+.forgetBtn{
+    -fx-text-fill: #a3a3a3;
+}
+
+.forgetBtn:hover{
+    -fx-text-fill: #6747CD;
+    -fx-underline: true;
+}
+
+.loginBtn{
+    -fx-background-color: #6747CD;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 10px;
+}
+
+.loginBtn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: #6747CD;
+    -fx-background-radius: 10px;
+    -fx-border-color: #6747CD;
+    -fx-border-radius: 10px;
+    -fx-border-style: solid;
+}
+
+.closeBtn{
+    -fx-fill: #545454;
+}
+
+.closeBtn:hover{
+    -fx-fill: #ff6666;
+}
+
+.sliderBtns{
+    -fx-text-fill: #DBE4EE;
+}
+
+.sliderBtns:hover{
+    -fx-text-fill: #81A4CD;
+}
+
+.pageTitle{
+    -fx-text-fill:#eb8f5e;
+}
+
+
+.check-box {
+    /* default properties */
+    selected-box-color: #6747cd;
+    box-color: #d2c5fc;
+    mark-color: #eb8f5e;
+}
+
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: selected-box-color;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: box-color;
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: mark-color;
+}
+
+.changeBtns{
+    -fx-text-fill: #6747cd;
+}
+
+.changeBtns:hover{
+    -fx-text-fill: #eb8f5e;
+}
+
+.depositBtn {
+
+    -fx-background-radius: 50em;
+    -fx-border:0px;
+    -fx-min-width: 80px;
+    -fx-min-height: 80px;
+    -fx-max-width: 150px;
+    -fx-max-height: 80px;
+    -fx-base: white;
+    -fx-text-alignment:center;
+    -fx-text-fill:#6747CD;
+}
+
+.depositBtn:hover {
+    -fx-base:#6747CD;
+    -fx-text-fill:#eb8f5e;
+}
+
+

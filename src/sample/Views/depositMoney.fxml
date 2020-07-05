@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" styleClass="parent" stylesheets="@../../stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.DepositMoneyController">
+   <children>
+      <Label layoutX="363.0" layoutY="14.0" text="Deposit Money" textFill="#eb8f5e">
+         <font>
+            <Font name="Ebrima" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountIDTXT" layoutX="490.0" layoutY="165.0" promptText="Please Enter accountID" />
+      <Button fx:id="negBtn" alignment="CENTER" layoutX="151.0" layoutY="295.0" mnemonicParsing="false" styleClass="depositBtn" stylesheets="@../../stylesheet.css" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Button>
+      <Button fx:id="posBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="808.0" layoutY="295.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" styleClass="depositBtn" stylesheets="@../../stylesheet.css" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Button>
+      <Line endX="223.0" endY="0.399993896484375" layoutX="464.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6747cd" height="200.0" layoutX="325.0" layoutY="235.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="400.0" />
+      <Circle fill="WHITE" layoutX="525.0" layoutY="335.0" radius="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="345.0" layoutY="250.0" text="L.L" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="374.0" text="L.L" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBtn" layoutX="402.0" layoutY="510.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="248.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="ADD">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+      <Label fx:id="valueText" alignment="CENTER" layoutX="435.0" layoutY="302.0" prefHeight="66.0" prefWidth="182.0" text="0" textAlignment="CENTER" textFill="#6747cd">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="165.0" text="AccountID:" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.signUpController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: lightblue;" styleClass="parent" stylesheets="@../../stylesheet.css">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/guiapplogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="366.0" layoutY="14.0" prefHeight="70.0" prefWidth="413.0" text="Adding new client" textFill="#eb8f5e">
+               <font>
+                  <Font name="Ebrima" size="48.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstName" layoutX="226.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="middleName" layoutX="226.0" layoutY="191.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Middle Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastName" layoutX="226.0" layoutY="241.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="firstAddress" layoutX="226.0" layoutY="338.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Fisrt Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ChoiceBox fx:id="country" layoutX="226.0" layoutY="448.0" prefHeight="40.0" prefWidth="300.0" />
+            <TextField fx:id="secondAddress" layoutX="226.0" layoutY="393.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Second Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="city" layoutX="226.0" layoutY="506.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="homePhone" layoutX="226.0" layoutY="562.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Home Phone">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="workPhone" layoutX="226.0" layoutY="614.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Work Phone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="incomeValue" layoutX="619.0" layoutY="191.0" prefHeight="40.0" prefWidth="300.0" promptText="Income Per Month" />
+            <TextField fx:id="balanceTXT" layoutX="619.0" layoutY="241.0" prefHeight="40.0" prefWidth="300.0" promptText="Balance">
+               <font>
+                  <Font name="Ebrima" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="userName" layoutX="619.0" layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" layoutX="619.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Email">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="619.0" layoutY="398.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
+            <PasswordField fx:id="confirmPassword" layoutX="619.0" layoutY="448.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Confirm Password" />
+            <Button fx:id="signUpBtn" layoutX="619.0" layoutY="520.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@../../stylesheet.css" text="ADD" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Line endX="6.0" endY="421.0" layoutX="572.0" layoutY="261.0" startX="6.0" startY="-137.0" stroke="#6747cd" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" />
+            <Line endX="284.0" endY="-1.52587890625E-5" layoutX="467.0" layoutY="84.0" startX="-100.0" stroke="#6747cd" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
