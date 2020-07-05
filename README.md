@@ -26,17 +26,20 @@ Some Details for Login:
 ------------------------
 
 Login as Admin:(Admin can add New Reception and Users)
+
 	username: admin
 	password: admin
 
 Login as Reception:(Reception can ONLY add new Users)
+
 	username: doctor
 	password: doctor
 
 Login as CustomeRS:
 
-  username1: hadi
+  	username1: hadi
 	password1: hadi
+	
 	username2: zahwe
 	password2: zahwe
   
